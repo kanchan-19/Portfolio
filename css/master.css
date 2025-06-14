@@ -10,6 +10,11 @@
     --box-shadow: 0px 0.5px 5px rgb(0, 0, 0, 0.5);
     --link-hover-bg-color: aliceblue;
 
+    /* For hero section */
+
+    --hero-section-bg-color: #ffffff;
+    --hero-section-text-color: black;
+
     /* For project */
 
     --container-1-bg-color: rgb(229 229 229);
@@ -42,6 +47,11 @@
     --global-text: white;
     --box-shadow: 0px 0.5px 5px rgb(255, 255, 255, 0.5);
     --link-hover-bg-color: grey;
+
+    /* For hero section*/
+
+    --hero-section-bg-color: #000000;
+    --hero-section-text-color: white;
 
     /* For project */
 
@@ -78,6 +88,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 /* hero */
@@ -88,6 +99,11 @@ body {
     width: 100%;
     box-shadow: var(--box-shadow);
     padding: 1rem 0rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--hero-section-bg-color);
+    color: var(--hero-section-text-color);
 }
 
 .name{
@@ -106,7 +122,6 @@ body {
 .item a{
     text-decoration: none;
     color: var(--global-text);
-    background-color: var(--global-bg);
     padding: 0.25rem;
 }
 
@@ -127,7 +142,7 @@ body {
 
 .introduction{
     display: flex;
-    margin: 20px 50px;
+    margin: 5rem 50px 20px 50px;
     width: 44rem;
 }
 
