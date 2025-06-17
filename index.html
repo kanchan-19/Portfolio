@@ -20,20 +20,30 @@
     <body>
         <div class ="hero">
             <div class = "name">Kanchan Kumari</div>
+
             <div class = "item">
-                <a>Home</a>
+                <a href = "#intro">Home</a>
                 <a href = "#about">About</a>
                 <a href = "#skills">Skills</a>
                 <a href = "#projects">Projects</a>
                 <a href = "#experience">Experience</a>
                 <a href = "#contact">Contact</a>
+            </div>
+
+            <div class = "header-right-side">
                 <i class="fa-regular fa-moon mode" id = "dark"></i>
+            
+                <div class = "hamburger-menu-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
         </div>
 
-        <div class="introduction">
-            <div class = "halo"><img src="images/profile_pic.jpg" alt="profile pic" id="profile_pic"></div>
-            <section class="name">
+        <div class="introduction" id = "intro">
+            <div class = "halo">
+                <img src="images/profile_pic.jpg" alt="profile pic" id="profile_pic">
+            </div>
+            <section class = "intro_details">
                 <h2>Kanchan Kumari</h2>
                 <p>Software Developer</p>
                 <p>India</p>
@@ -59,36 +69,49 @@ Let’s connect and create something meaningful.</pre>
 
         <div class="technology" id = "skills">
             <h3>Skills</h3>
-            <p class = "tech">
-                <span class = "tech_domain">Frontened:</span>
-                <button class = "tech_name"><i class="fa-brands fa-html5"></i> HTML</button>
-                <button class = "tech_name"><i class="fa-brands fa-css"></i> CSS</button>
-                <button class = "tech_name"><i class="fa-brands fa-js"></i> JavaScript</button>
-            </p>
-            <p class = "tech">
-                <span class = "tech_domain">Backend:</span>
-                <button class = "tech_name"><i class="fa-brands fa-java"></i> Java</button>
-            </p>
-            <p class = "tech">
-                <span class = "tech_domain">Database:</span>
-                <button class = "tech_name"><i class="fa-solid fa-database"></i> MySQL</button>
-            </p>
-            <p class = "tech">
-                <span class = "tech_domain">Version Control:</span>
-                <button class = "tech_name"><svg viewBox="0 0 128 128" class="mr-1 inline-flex size-3 self-center"><path fill="#F34F29" d="M124.742 58.378 69.625 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.685 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314a9.66 9.66 0 0 1 2.293 9.993L87.42 55.529c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 0 1-13.683 0 9.677 9.677 0 0 1-2.105-10.521L68.578 47.933l-.002 34.341a9.708 9.708 0 0 1 2.559 1.828c3.779 3.777 3.779 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-4.088-9.905-.311-13.683.934-.933 1.855-1.638 2.855-2.11V47.333c-1-.472-1.92-1.172-2.856-2.111-2.861-2.86-3.396-7.06-1.928-10.576L40.983 20.333 3.229 58.123c-3.175 3.177-3.155 8.325.02 11.5l55.126 55.114c3.173 3.174 8.325 3.174 11.503 0l54.86-54.858c3.175-3.176 3.178-8.327.004-11.501z"></path></svg> Git</button>
-                <button class = "tech_name"><i class="fa-brands fa-github"></i> Github</button>
-            </p>
-            <p class = "tech">
-                <span class = "tech_domain">Cloud:</span>
-                <button class = "tech_name"> Microsoft Azure</button>
-                <button class = "tech_name">Azure Information Protection</button>
-            </p>
-            <p class = "tech">
-                <span class = "tech_domain">Others:</span>
-                <button class = "tech_name">Cross Team Collaboration</button>
-                <button class = "tech_name">Problem Solving</button>
-                <button class = "tech_name">Documentation</button>
-            </p>
+            <div class = "tech">
+                <div class = "tech_domain">Frontened:</div>
+                
+                <div class = "tech_name_container">
+                    <button class = "tech_name"><i class="fa-brands fa-html5"></i> HTML</button>
+                    <button class = "tech_name"><i class="fa-brands fa-css"></i> CSS</button>
+                    <button class = "tech_name"><i class="fa-brands fa-js"></i> JavaScript</button>
+                </div>
+            </div>
+            <div class = "tech">
+                <div class = "tech_domain">Backend:</div>
+                <div class = "tech_name_container">
+                    <button class = "tech_name"><i class="fa-brands fa-java"></i> Java</button>
+                </div>
+            </div>
+            <div class = "tech">
+                <div class = "tech_domain">Database:</div>
+                <div class = "tech_name_container">
+                    <button class = "tech_name"><i class="fa-solid fa-database"></i> MySQL</button>
+                </div>
+            </div>
+            <div class = "tech">
+                <div class = "tech_domain">Version Control:</div>
+                <div class = "tech_name_container">
+                    <button class = "tech_name"><svg viewBox="0 0 128 128" class="mr-1 inline-flex size-3 self-center"><path fill="#F34F29" d="M124.742 58.378 69.625 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.685 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314a9.66 9.66 0 0 1 2.293 9.993L87.42 55.529c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 0 1-13.683 0 9.677 9.677 0 0 1-2.105-10.521L68.578 47.933l-.002 34.341a9.708 9.708 0 0 1 2.559 1.828c3.779 3.777 3.779 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-4.088-9.905-.311-13.683.934-.933 1.855-1.638 2.855-2.11V47.333c-1-.472-1.92-1.172-2.856-2.111-2.861-2.86-3.396-7.06-1.928-10.576L40.983 20.333 3.229 58.123c-3.175 3.177-3.155 8.325.02 11.5l55.126 55.114c3.173 3.174 8.325 3.174 11.503 0l54.86-54.858c3.175-3.176 3.178-8.327.004-11.501z"></path></svg> Git</button>
+                    <button class = "tech_name"><i class="fa-brands fa-github"></i> Github</button>
+                </div>
+            </div>
+            <div class = "tech">
+                <div class = "tech_domain">Cloud:</div>
+                <div class = "tech_name_container">
+                    <button class = "tech_name"> Microsoft Azure</button>
+                    <button class = "tech_name">Azure Information Protection</button>
+                </div>
+            </div>
+            <div class = "tech">
+                <div class = "tech_domain">Others:</div>
+                <div class = "tech_name_container">
+                    <button class = "tech_name">Cross Team Collaboration</button>
+                    <button class = "tech_name">Problem Solving</button>
+                    <button class = "tech_name">Documentation</button>
+                </div>
+            </div>
         </div>
 
         <div class ="connect_container">
@@ -151,14 +174,14 @@ Let’s connect and create something meaningful.</pre>
                     </div>
                 </div>
 
-            <div class="weather_app js_project">
-                <figure>
-                    <img src="images/weather-app.png" alt="weather-app" id="weather_app">
-                    <figcaption>Weather App</figcaption>
-                </figure>
-                <p class = "description">It shows us the weather condition i.e. temperature, humidity and wind speed of the given city.</p>
-                <div class="used_technologies">
-                    <div class = "tech_images">
+                <div class="weather_app js_project">
+                    <figure>
+                        <img src="images/weather-app.png" alt="weather-app" id="weather_app">
+                        <figcaption>Weather App</figcaption>
+                    </figure>
+                    <p class = "description">It shows us the weather condition i.e. temperature, humidity and wind speed of the given city.</p>
+                    <div class="used_technologies">
+                        <div class = "tech_images">
                         <img src = "images/icons8-html5-48.png" alt = "html" id = "html" title = "HTML">
                         <img src = "images/icons8-css-48.png" alt = "css" id = "css" title = "CSS">
                         <img src = "images/icons8-javascript-24.png" alt = "js" id = "js" title = "JavaScript">

@@ -43,3 +43,19 @@ document.getElementById('contactForm').addEventListener('submit', async function
     }
 });
 
+// --------------------------------------------------------------------------------------------------------------------
+
+const hamburger_icon = document.querySelector('.hamburger-menu-icon');
+const item = document.querySelector('.item');
+
+hamburger_icon.addEventListener('click', function(event){
+  item.classList.toggle('active');
+
+  item.querySelectorAll('a').forEach(function(link){
+    link.addEventListener('click', () => {
+      if(item.classList.contains('active')){
+        item.classList.remove('active');
+      }
+    });
+  });
+})
